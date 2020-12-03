@@ -13,7 +13,7 @@ request(site, (error, response, body) => {
     if (err) throw err;
     fs.stat(path, (err, stats) => {
       if (err) throw err;
-      console.log(`Downloaded and saved ${stats.size} bytes to ${path}`)
-    })
-  })
+      console.log(`Downloaded and saved ${stats.size} bytes to ${path}`);
+    });
+  });
 });
